@@ -11,9 +11,9 @@
 		38E1E0A12BF8E9390063DF24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0A02BF8E9390063DF24 /* ContentView.swift */; };
 		38E1E0A32BF8E93C0063DF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */; };
 		38E1E0A62BF8E93C0063DF24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E1E0A52BF8E93C0063DF24 /* Preview Assets.xcassets */; };
-		38E1E0B02BF8E93C0063DF24 /* SkyPulseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0AF2BF8E93C0063DF24 /* SkyPulseTests.swift */; };
-		38E1E0BA2BF8E93C0063DF24 /* SkyPulseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0B92BF8E93C0063DF24 /* SkyPulseUITests.swift */; };
-		38E1E0BC2BF8E93C0063DF24 /* SkyPulseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0BB2BF8E93C0063DF24 /* SkyPulseUITestsLaunchTests.swift */; };
+		38E1E0C92BF8F2FC0063DF24 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */; };
+		38E1E0CE2BF8F6B00063DF24 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */; };
+		38E1E0D02BF912680063DF24 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0CF2BF912680063DF24 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,10 @@
 		38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E1E0A52BF8E93C0063DF24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		38E1E0AB2BF8E93C0063DF24 /* SkyPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38E1E0AF2BF8E93C0063DF24 /* SkyPulseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyPulseTests.swift; sourceTree = "<group>"; };
 		38E1E0B52BF8E93C0063DF24 /* SkyPulseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyPulseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38E1E0B92BF8E93C0063DF24 /* SkyPulseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyPulseUITests.swift; sourceTree = "<group>"; };
-		38E1E0BB2BF8E93C0063DF24 /* SkyPulseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyPulseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		38E1E0CF2BF912680063DF24 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				38E1E09D2BF8E9390063DF24 /* SkyPulse */,
-				38E1E0AE2BF8E93C0063DF24 /* SkyPulseTests */,
-				38E1E0B82BF8E93C0063DF24 /* SkyPulseUITests */,
 				38E1E09C2BF8E9390063DF24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +92,7 @@
 		38E1E09D2BF8E9390063DF24 /* SkyPulse */ = {
 			isa = PBXGroup;
 			children = (
+				38E1E0CA2BF8F65F0063DF24 /* Modules */,
 				38E1E09E2BF8E9390063DF24 /* SkyPulseApp.swift */,
 				38E1E0A02BF8E9390063DF24 /* ContentView.swift */,
 				38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */,
@@ -110,21 +109,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		38E1E0AE2BF8E93C0063DF24 /* SkyPulseTests */ = {
+		38E1E0CA2BF8F65F0063DF24 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				38E1E0AF2BF8E93C0063DF24 /* SkyPulseTests.swift */,
+				38E1E0CC2BF8F6890063DF24 /* Model */,
+				38E1E0CB2BF8F6710063DF24 /* First_Screen */,
 			);
-			path = SkyPulseTests;
+			path = Modules;
 			sourceTree = "<group>";
 		};
-		38E1E0B82BF8E93C0063DF24 /* SkyPulseUITests */ = {
+		38E1E0CB2BF8F6710063DF24 /* First_Screen */ = {
 			isa = PBXGroup;
 			children = (
-				38E1E0B92BF8E93C0063DF24 /* SkyPulseUITests.swift */,
-				38E1E0BB2BF8E93C0063DF24 /* SkyPulseUITestsLaunchTests.swift */,
 			);
-			path = SkyPulseUITests;
+			path = First_Screen;
+			sourceTree = "<group>";
+		};
+		38E1E0CC2BF8F6890063DF24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */,
+				38E1E0CF2BF912680063DF24 /* NetworkManager.swift */,
+				38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E1E0CE2BF8F6B00063DF24 /* WeatherData.swift in Sources */,
 				38E1E0A12BF8E9390063DF24 /* ContentView.swift in Sources */,
+				38E1E0D02BF912680063DF24 /* NetworkManager.swift in Sources */,
 				38E1E09F2BF8E9390063DF24 /* SkyPulseApp.swift in Sources */,
+				38E1E0C92BF8F2FC0063DF24 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E1E0B02BF8E93C0063DF24 /* SkyPulseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38E1E0BC2BF8E93C0063DF24 /* SkyPulseUITestsLaunchTests.swift in Sources */,
-				38E1E0BA2BF8E93C0063DF24 /* SkyPulseUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +432,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SkyPulse/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide you with weather updates";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide you with weather updates";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +462,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SkyPulse/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide you with weather updates";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to provide you with weather updates";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
