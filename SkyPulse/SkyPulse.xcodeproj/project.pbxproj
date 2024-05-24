@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380CCCB02BF959F800D01B23 /* Day.png in Resources */ = {isa = PBXBuildFile; fileRef = 380CCCAF2BF959F800D01B23 /* Day.png */; };
+		380CCCF52BFA50C100D01B23 /* ForecastDayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CCCF42BFA50C100D01B23 /* ForecastDayRow.swift */; };
+		380CCCFA2BFA7F8800D01B23 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CCCF92BFA7F8800D01B23 /* MainScreenViewModel.swift */; };
+		380CCCFD2BFA836F00D01B23 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CCCFC2BFA836F00D01B23 /* MainScreenView.swift */; };
+		380CCD002BFAB5CB00D01B23 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 380CCCFF2BFAB5CB00D01B23 /* Kingfisher */; };
+		38872F1C2BFB1A78005FAF1B /* DetailsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38872F1B2BFB1A78005FAF1B /* DetailsScreenViewModel.swift */; };
+		38872F202BFB51B5005FAF1B /* DetailsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38872F1F2BFB51B5005FAF1B /* DetailsScreenView.swift */; };
 		38E1E09F2BF8E9390063DF24 /* SkyPulseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E09E2BF8E9390063DF24 /* SkyPulseApp.swift */; };
 		38E1E0A12BF8E9390063DF24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0A02BF8E9390063DF24 /* ContentView.swift */; };
 		38E1E0A32BF8E93C0063DF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */; };
@@ -14,36 +21,25 @@
 		38E1E0C92BF8F2FC0063DF24 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */; };
 		38E1E0CE2BF8F6B00063DF24 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */; };
 		38E1E0D02BF912680063DF24 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0CF2BF912680063DF24 /* NetworkManager.swift */; };
+		38EB13862BFBD66700C6CD9A /* Night.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EB13852BFBD66700C6CD9A /* Night.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		38E1E0AC2BF8E93C0063DF24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38E1E0932BF8E9390063DF24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38E1E09A2BF8E9390063DF24;
-			remoteInfo = SkyPulse;
-		};
-		38E1E0B62BF8E93C0063DF24 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 38E1E0932BF8E9390063DF24 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 38E1E09A2BF8E9390063DF24;
-			remoteInfo = SkyPulse;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		380CCCAF2BF959F800D01B23 /* Day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Day.png; path = "../../../../Desktop/ITI/SwiftUI/Project/SwiftUI Project Specs/Day.png"; sourceTree = "<group>"; };
+		380CCCF42BFA50C100D01B23 /* ForecastDayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayRow.swift; sourceTree = "<group>"; };
+		380CCCF92BFA7F8800D01B23 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		380CCCFC2BFA836F00D01B23 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		38872F1B2BFB1A78005FAF1B /* DetailsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenViewModel.swift; sourceTree = "<group>"; };
+		38872F1F2BFB51B5005FAF1B /* DetailsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenView.swift; sourceTree = "<group>"; };
 		38E1E09B2BF8E9390063DF24 /* SkyPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E1E09E2BF8E9390063DF24 /* SkyPulseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyPulseApp.swift; sourceTree = "<group>"; };
 		38E1E0A02BF8E9390063DF24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E1E0A52BF8E93C0063DF24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		38E1E0AB2BF8E93C0063DF24 /* SkyPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38E1E0B52BF8E93C0063DF24 /* SkyPulseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyPulseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		38E1E0CF2BF912680063DF24 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		38EB13852BFBD66700C6CD9A /* Night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Night.png; path = "../../../../Desktop/ITI/SwiftUI/Project/SwiftUI Project Specs/Night.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,26 +47,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38E1E0A82BF8E93C0063DF24 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38E1E0B22BF8E93C0063DF24 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				380CCD002BFAB5CB00D01B23 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		380CCCF72BFA7F5C00D01B23 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				380CCCFB2BFA7F9D00D01B23 /* View */,
+				380CCCF82BFA7F6C00D01B23 /* ViewModel */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		380CCCF82BFA7F6C00D01B23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				380CCCF92BFA7F8800D01B23 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		380CCCFB2BFA7F9D00D01B23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				380CCCF42BFA50C100D01B23 /* ForecastDayRow.swift */,
+				380CCCFC2BFA836F00D01B23 /* MainScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38872F182BFB1A3D005FAF1B /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				38872F1A2BFB1A55005FAF1B /* ViewModel */,
+				38872F192BFB1A4A005FAF1B /* View */,
+			);
+			path = DetailsScreen;
+			sourceTree = "<group>";
+		};
+		38872F192BFB1A4A005FAF1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38872F1F2BFB51B5005FAF1B /* DetailsScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		38872F1A2BFB1A55005FAF1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				38872F1B2BFB1A78005FAF1B /* DetailsScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		38E1E0922BF8E9390063DF24 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				38E1E09B2BF8E9390063DF24 /* SkyPulse.app */,
-				38E1E0AB2BF8E93C0063DF24 /* SkyPulseTests.xctest */,
-				38E1E0B52BF8E93C0063DF24 /* SkyPulseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,9 +124,12 @@
 		38E1E09D2BF8E9390063DF24 /* SkyPulse */ = {
 			isa = PBXGroup;
 			children = (
+				38E1E0CC2BF8F6890063DF24 /* Model */,
 				38E1E0CA2BF8F65F0063DF24 /* Modules */,
 				38E1E09E2BF8E9390063DF24 /* SkyPulseApp.swift */,
 				38E1E0A02BF8E9390063DF24 /* ContentView.swift */,
+				380CCCAF2BF959F800D01B23 /* Day.png */,
+				38EB13852BFBD66700C6CD9A /* Night.png */,
 				38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */,
 				38E1E0A42BF8E93C0063DF24 /* Preview Content */,
 			);
@@ -112,17 +147,10 @@
 		38E1E0CA2BF8F65F0063DF24 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				38E1E0CC2BF8F6890063DF24 /* Model */,
-				38E1E0CB2BF8F6710063DF24 /* First_Screen */,
+				38872F182BFB1A3D005FAF1B /* DetailsScreen */,
+				380CCCF72BFA7F5C00D01B23 /* MainScreen */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		38E1E0CB2BF8F6710063DF24 /* First_Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = First_Screen;
 			sourceTree = "<group>";
 		};
 		38E1E0CC2BF8F6890063DF24 /* Model */ = {
@@ -151,45 +179,12 @@
 			dependencies = (
 			);
 			name = SkyPulse;
+			packageProductDependencies = (
+				380CCCFF2BFAB5CB00D01B23 /* Kingfisher */,
+			);
 			productName = SkyPulse;
 			productReference = 38E1E09B2BF8E9390063DF24 /* SkyPulse.app */;
 			productType = "com.apple.product-type.application";
-		};
-		38E1E0AA2BF8E93C0063DF24 /* SkyPulseTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38E1E0C22BF8E93C0063DF24 /* Build configuration list for PBXNativeTarget "SkyPulseTests" */;
-			buildPhases = (
-				38E1E0A72BF8E93C0063DF24 /* Sources */,
-				38E1E0A82BF8E93C0063DF24 /* Frameworks */,
-				38E1E0A92BF8E93C0063DF24 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38E1E0AD2BF8E93C0063DF24 /* PBXTargetDependency */,
-			);
-			name = SkyPulseTests;
-			productName = SkyPulseTests;
-			productReference = 38E1E0AB2BF8E93C0063DF24 /* SkyPulseTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		38E1E0B42BF8E93C0063DF24 /* SkyPulseUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 38E1E0C52BF8E93C0063DF24 /* Build configuration list for PBXNativeTarget "SkyPulseUITests" */;
-			buildPhases = (
-				38E1E0B12BF8E93C0063DF24 /* Sources */,
-				38E1E0B22BF8E93C0063DF24 /* Frameworks */,
-				38E1E0B32BF8E93C0063DF24 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				38E1E0B72BF8E93C0063DF24 /* PBXTargetDependency */,
-			);
-			name = SkyPulseUITests;
-			productName = SkyPulseUITests;
-			productReference = 38E1E0B52BF8E93C0063DF24 /* SkyPulseUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,14 +199,6 @@
 					38E1E09A2BF8E9390063DF24 = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					38E1E0AA2BF8E93C0063DF24 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 38E1E09A2BF8E9390063DF24;
-					};
-					38E1E0B42BF8E93C0063DF24 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 38E1E09A2BF8E9390063DF24;
-					};
 				};
 			};
 			buildConfigurationList = 38E1E0962BF8E9390063DF24 /* Build configuration list for PBXProject "SkyPulse" */;
@@ -223,13 +210,14 @@
 				Base,
 			);
 			mainGroup = 38E1E0922BF8E9390063DF24;
+			packageReferences = (
+				380CCCFE2BFAB5CB00D01B23 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 38E1E09C2BF8E9390063DF24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				38E1E09A2BF8E9390063DF24 /* SkyPulse */,
-				38E1E0AA2BF8E93C0063DF24 /* SkyPulseTests */,
-				38E1E0B42BF8E93C0063DF24 /* SkyPulseUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,22 +227,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380CCCB02BF959F800D01B23 /* Day.png in Resources */,
 				38E1E0A62BF8E93C0063DF24 /* Preview Assets.xcassets in Resources */,
+				38EB13862BFBD66700C6CD9A /* Night.png in Resources */,
 				38E1E0A32BF8E93C0063DF24 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38E1E0A92BF8E93C0063DF24 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38E1E0B32BF8E93C0063DF24 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,40 +243,18 @@
 			files = (
 				38E1E0CE2BF8F6B00063DF24 /* WeatherData.swift in Sources */,
 				38E1E0A12BF8E9390063DF24 /* ContentView.swift in Sources */,
+				380CCCF52BFA50C100D01B23 /* ForecastDayRow.swift in Sources */,
+				380CCCFD2BFA836F00D01B23 /* MainScreenView.swift in Sources */,
+				38872F1C2BFB1A78005FAF1B /* DetailsScreenViewModel.swift in Sources */,
+				380CCCFA2BFA7F8800D01B23 /* MainScreenViewModel.swift in Sources */,
 				38E1E0D02BF912680063DF24 /* NetworkManager.swift in Sources */,
 				38E1E09F2BF8E9390063DF24 /* SkyPulseApp.swift in Sources */,
 				38E1E0C92BF8F2FC0063DF24 /* LocationManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38E1E0A72BF8E93C0063DF24 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		38E1E0B12BF8E93C0063DF24 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				38872F202BFB51B5005FAF1B /* DetailsScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		38E1E0AD2BF8E93C0063DF24 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 38E1E09A2BF8E9390063DF24 /* SkyPulse */;
-			targetProxy = 38E1E0AC2BF8E93C0063DF24 /* PBXContainerItemProxy */;
-		};
-		38E1E0B72BF8E93C0063DF24 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 38E1E09A2BF8E9390063DF24 /* SkyPulse */;
-			targetProxy = 38E1E0B62BF8E93C0063DF24 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		38E1E0BD2BF8E93C0063DF24 /* Debug */ = {
@@ -482,78 +436,6 @@
 			};
 			name = Release;
 		};
-		38E1E0C32BF8E93C0063DF24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = salma.SkyPulseTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyPulse";
-			};
-			name = Debug;
-		};
-		38E1E0C42BF8E93C0063DF24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = salma.SkyPulseTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyPulse";
-			};
-			name = Release;
-		};
-		38E1E0C62BF8E93C0063DF24 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = salma.SkyPulseUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SkyPulse;
-			};
-			name = Debug;
-		};
-		38E1E0C72BF8E93C0063DF24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = salma.SkyPulseUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SkyPulse;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -575,25 +457,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38E1E0C22BF8E93C0063DF24 /* Build configuration list for PBXNativeTarget "SkyPulseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38E1E0C32BF8E93C0063DF24 /* Debug */,
-				38E1E0C42BF8E93C0063DF24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		38E1E0C52BF8E93C0063DF24 /* Build configuration list for PBXNativeTarget "SkyPulseUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				38E1E0C62BF8E93C0063DF24 /* Debug */,
-				38E1E0C72BF8E93C0063DF24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		380CCCFE2BFAB5CB00D01B23 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		380CCCFF2BFAB5CB00D01B23 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 380CCCFE2BFAB5CB00D01B23 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 38E1E0932BF8E9390063DF24 /* Project object */;
 }

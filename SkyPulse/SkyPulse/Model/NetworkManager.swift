@@ -4,13 +4,11 @@
 //
 //  Created by Salma on 18/05/2024.
 
-
 import Foundation
-
 class NetworkManager {
     static let shared = NetworkManager()
     private init() {}
-
+    
     func fetchData<WeatherData: Decodable>(latitude: Double, longitude: Double, completion: @escaping (Result<WeatherData, Error>) -> Void) {
         let apiKey = "01029134bd9d4b1e9e4132126241805"
         let urlString = "https://api.weatherapi.com/v1/forecast.json?key=\(apiKey)&q=\(latitude),\(longitude)&days=3&aqi=no&alerts=no"
@@ -20,8 +18,7 @@ class NetworkManager {
             return
         }
 
-        print("Request URL: \(urlString)") // Debug print to check URL
-        
+        print("Request URL: \(urlString)")
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 completion(.failure(error))
@@ -33,9 +30,9 @@ class NetworkManager {
                 return
             }
             
-            // Print the raw data received
+       
             if let jsonString = String(data: data, encoding: .utf8) {
-                print("Raw JSON data: \(jsonString)")
+               // print("Raw JSON data: \(jsonString)")
             } else {
                 print("Failed to convert raw data to string.")
             }
@@ -43,8 +40,9 @@ class NetworkManager {
             do {
                 let decoder = JSONDecoder()
                 let decodedData = try decoder.decode(WeatherData.self, from: data)
-                print("Decoded Data: \(decodedData)")
+                //print("Decoded Data: \(decodedData)")
                 completion(.success(decodedData))
+          
             } catch {
                 completion(.failure(error))
             }
@@ -53,5 +51,6 @@ class NetworkManager {
         task.resume()
     }
 }
+
 
 
