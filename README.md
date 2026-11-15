@@ -40,17 +40,6 @@ An iOS weather app that gives you real-time weather, location-based temperature 
 | Animations | Lottie |
 | Version Control | Git, GitHub |
 
-
-```
-SkyPulse/
-├── Models/
-├── Views/
-├── ViewModels/
-├── Network/
-├── Resources/
-└── Tests/
-```
-
 ## 🚀 Getting Started
 
 ### Prerequisites
