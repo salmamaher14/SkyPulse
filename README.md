@@ -17,9 +17,6 @@ An iOS weather app that gives you real-time weather, location-based temperature 
 - Location-based temperature for your current position
 - 3-day weather forecast
 - Detailed view for each forecast day
-- Save your favorite locations
-- Personalized weather notifications
-- Smooth weather animations with Lottie
 - Day and night visual themes
 
 ## 📸 Screenshots
@@ -46,4 +43,12 @@ An iOS weather app that gives you real-time weather, location-based temperature 
 
 - Xcode 15 or later
 - iOS 16.0 or later
+
+### Installation
+- Clone the repository from: git clone https://github.com/your-username/SkyPulse.git
+- Open the project in Xcode and press ⌘ + R to run
+
+
+Feel free to contribute to project and add your owns!
+If there any problem don't hesitate to contact me via: salmamaher561@gmail.com
 
