@@ -57,6 +57,4 @@ SkyPulse/
 
 - Xcode 15 or later
 - iOS 16.0 or later
-- Swift Package Manager or CocoaPods (depending on your setup)
-- A weather API key
 
