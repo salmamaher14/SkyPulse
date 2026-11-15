@@ -2,11 +2,17 @@
 import SwiftUI
 import Kingfisher
 
+
+
 struct DetailsScreenView: View {
     @StateObject var viewModel: DetailsScreenViewModel
+
+    private var isNight: Bool { backgroundImageName == "night_background" }
+    private var textColor: Color { isNight ? .white : .black }
+
     private var backgroundImageName: String {
         let hour = Calendar.current.component(.hour, from: Date())
-        return (hour >= 6 && hour < 18) ? "Day" : "Night"
+        return (hour >= 6 && hour < 18) ? "Day" : "night_background"
     }
 
     var body: some View {
@@ -14,43 +20,50 @@ struct DetailsScreenView: View {
             Image(backgroundImageName)
                 .resizable()
                 .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+                .ignoresSafeArea()
                 .opacity(0.7)
 
-            VStack(alignment: .leading) {
-                List {
+          
+                List{
                     ForEach(filteredHourlyWeather(), id: \.time) { hour in
-                        HStack {
-                            Text(isCurrentHour(hour) ? "Now" : getFormattedHour(from: hour.time))
-                                .font(.headline)
-                                .foregroundColor(backgroundImageName == "Night" ? .white : .black)
-
-                            Spacer()
-
+                        ZStack {
                             if let url = URL(string: "https:\(hour.condition.icon)") {
                                 KFImage(url)
                                     .resizable()
-                                    .aspectRatio(contentMode: .fill)
+                                    .aspectRatio(contentMode: .fit)
                                     .frame(width: 50, height: 50)
                             }
 
-                            Spacer()
+                            HStack {
+                                Text(isCurrentHour(hour) ? "Now" : getFormattedHour(from: hour.time))
+                                    .font(.headline)
+                                    .lineLimit(1)
+                                    .foregroundColor(textColor)
 
-                            Text("\(hour.temp_c, specifier: "%.1f")°")
-                                .font(.subheadline)
-                                .foregroundColor(backgroundImageName == "Night" ? .white : .black)
+                                Spacer()
+
+                                Text("\(hour.temp_c, specifier: "%.1f")°")
+                                    .font(.subheadline)
+                                    .monospacedDigit()
+                                    .foregroundColor(textColor)
+                            }.frame(height: 40)
                         }
-                        .padding(.vertical)
-                        .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 30))
+                        .padding(.horizontal)
                         .listRowBackground(Color.clear)
+                        .listRowSeparatorTint(textColor.opacity(0.3))
                         .id(hour.time)
                     }
                 }
-                .listStyle(PlainListStyle())
-            }
-            .padding(.top , 70)
+                .listStyle(.plain)
+                .scrollIndicators(.hidden)
+                .safeAreaPadding()
+                .padding(.horizontal)
+                .padding(.top, 70)
+                .padding(.bottom, 16)
+ 
         }
-    }
+}
+
 
     private func filteredHourlyWeather() -> [Hour] {
         let currentHourString = getCurrentHour()
@@ -77,12 +90,4 @@ struct DetailsScreenView: View {
         return dateFormatter.string(from: date)
     }
 }
-
-
-
-
-
-
-
-
 

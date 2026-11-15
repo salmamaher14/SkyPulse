@@ -16,7 +16,7 @@ struct MainScreenView: View {
 
     private var backgroundImageName: String {
         let hour = Calendar.current.component(.hour, from: Date())
-        return (hour >= 6 && hour < 18) ? "Day" : "Night"
+        return (hour >= 6 && hour < 18) ? "Day" : "night_background"
     }
 
     var body: some View {
@@ -31,19 +31,19 @@ struct MainScreenView: View {
                     Text(viewModel.locationName)
                         .font(.largeTitle)
                         .padding(.top, 20)
-                        .foregroundColor(backgroundImageName == "Night" ? .white : .black)
+                        .foregroundColor(backgroundImageName == "night_background" ? .white : .black)
                     Text("\(viewModel.currentTemperature, specifier: "%.1f")°C")
                         .font(.title)
-                        .foregroundColor(backgroundImageName == "Night" ? .white : .black)
+                        .foregroundColor(backgroundImageName == "night_background" ? .white : .black)
                     Text(viewModel.conditionText)
                         .font(.title)
-                        .foregroundColor(backgroundImageName == "Night" ? .white : .black)
+                        .foregroundColor(backgroundImageName == "night_background" ? .white : .black)
                     HStack {
                         Text("H: \(viewModel.maxTemperature, specifier: "%.1f")°")
                         Text("L: \(viewModel.minTemperature, specifier: "%.1f")°")
                     }
                     .font(.title2)
-                    .foregroundColor(backgroundImageName == "Night" ? .white : .black)
+                    .foregroundColor(backgroundImageName == "night_background" ? .white : .black)
                     if !viewModel.conditionIcon.isEmpty, let url = URL(string: "https:\(viewModel.conditionIcon)") {
                         KFImage(url)
                             .resizable()
@@ -55,7 +55,7 @@ struct MainScreenView: View {
                         .padding(.top, 30)
                         .padding(.leading, 20)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundColor(backgroundImageName == "Night" ? .white : .black) 
+                        .foregroundColor(backgroundImageName == "night_background" ? .white : .black)
                     
                     List(viewModel.forecastDays.indices, id: \.self) { index in
                         NavigationLink(destination: DetailsScreenView(viewModel: DetailsScreenViewModel(forecastDay: viewModel.forecastDays[index]))) {
@@ -77,7 +77,7 @@ struct MainScreenView: View {
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             }
-            .foregroundColor(backgroundImageName == "Night" ? .white : .black)
+         //   .foregroundColor(backgroundImageName == "night_background" ? .white : .black)
             Spacer()
         }
     }

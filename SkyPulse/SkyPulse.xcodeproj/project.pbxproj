@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		380CCCB02BF959F800D01B23 /* Day.png in Resources */ = {isa = PBXBuildFile; fileRef = 380CCCAF2BF959F800D01B23 /* Day.png */; };
 		380CCCF52BFA50C100D01B23 /* ForecastDayRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CCCF42BFA50C100D01B23 /* ForecastDayRow.swift */; };
 		380CCCFA2BFA7F8800D01B23 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CCCF92BFA7F8800D01B23 /* MainScreenViewModel.swift */; };
 		380CCCFD2BFA836F00D01B23 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CCCFC2BFA836F00D01B23 /* MainScreenView.swift */; };
@@ -21,11 +20,9 @@
 		38E1E0C92BF8F2FC0063DF24 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */; };
 		38E1E0CE2BF8F6B00063DF24 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */; };
 		38E1E0D02BF912680063DF24 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E1E0CF2BF912680063DF24 /* NetworkManager.swift */; };
-		38EB13862BFBD66700C6CD9A /* Night.png in Resources */ = {isa = PBXBuildFile; fileRef = 38EB13852BFBD66700C6CD9A /* Night.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		380CCCAF2BF959F800D01B23 /* Day.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Day.png; path = "../../../../Desktop/ITI/SwiftUI/Project/SwiftUI Project Specs/Day.png"; sourceTree = "<group>"; };
 		380CCCF42BFA50C100D01B23 /* ForecastDayRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDayRow.swift; sourceTree = "<group>"; };
 		380CCCF92BFA7F8800D01B23 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
 		380CCCFC2BFA836F00D01B23 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -39,7 +36,6 @@
 		38E1E0C82BF8F2FC0063DF24 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		38E1E0CD2BF8F6B00063DF24 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		38E1E0CF2BF912680063DF24 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		38EB13852BFBD66700C6CD9A /* Night.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Night.png; path = "../../../../Desktop/ITI/SwiftUI/Project/SwiftUI Project Specs/Night.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +124,6 @@
 				38E1E0CA2BF8F65F0063DF24 /* Modules */,
 				38E1E09E2BF8E9390063DF24 /* SkyPulseApp.swift */,
 				38E1E0A02BF8E9390063DF24 /* ContentView.swift */,
-				380CCCAF2BF959F800D01B23 /* Day.png */,
-				38EB13852BFBD66700C6CD9A /* Night.png */,
 				38E1E0A22BF8E93C0063DF24 /* Assets.xcassets */,
 				38E1E0A42BF8E93C0063DF24 /* Preview Content */,
 			);
@@ -227,9 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				380CCCB02BF959F800D01B23 /* Day.png in Resources */,
 				38E1E0A62BF8E93C0063DF24 /* Preview Assets.xcassets in Resources */,
-				38EB13862BFBD66700C6CD9A /* Night.png in Resources */,
 				38E1E0A32BF8E93C0063DF24 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkyPulse/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GD344KRU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide you with weather updates";
@@ -393,6 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SkyPulse/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GD344KRU8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to provide you with weather updates";
@@ -423,6 +418,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

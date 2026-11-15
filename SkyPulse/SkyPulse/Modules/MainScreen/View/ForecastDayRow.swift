@@ -8,6 +8,8 @@
 import SwiftUI
 import Kingfisher
 
+
+
 struct ForecastDayRow: View {
     var forecastDay: ForecastDay
     var index: Int
@@ -26,36 +28,31 @@ struct ForecastDayRow: View {
     }
 
     var body: some View {
-        VStack {
-            HStack (spacing : 10){
-                Text(dayName)
-                    .font(.headline)
-                
-                Spacer()
-                
+       
+            ZStack{
                 if let url = URL(string: "https:\(forecastDay.day.condition.icon)") {
                     KFImage(url)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 50, height: 50)
-                        .padding(.vertical, 10)
                 }
                 
-                Spacer()
-                
-                Text("\(forecastDay.day.mintemp_c, specifier: "%.1f")°")
-                    .font(.subheadline)
-                Text("\(forecastDay.day.maxtemp_c, specifier: "%.1f")°")
-                    .font(.subheadline)
+                HStack (spacing : 10){
+                    Text(dayName)
+                        .font(.headline)
+                        .lineLimit(1)
+                    
+                    Spacer()
+                    
+                    Text("\(forecastDay.day.mintemp_c, specifier: "%.1f")°")
+                        .font(.subheadline)
+                    Text("\(forecastDay.day.maxtemp_c, specifier: "%.1f")°")
+                        .font(.subheadline)
+                }
             }
             .padding(.horizontal)
-            
-            Divider()
-                .frame(height: 0.99) 
-                .background(Color.black)
-            
-            .background(Color.clear)
-        }
+            .padding(.vertical,10)
+ 
     }
 
     private func getDate(from dateString: String) -> Date? {
