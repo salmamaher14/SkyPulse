@@ -9,7 +9,7 @@ An iOS weather app that gives you real-time weather, location-based temperature 
 
 ## 🎬 Demo
 
-▶️ [Watch the demo video](https://your-demo-link-here)
+▶️ [Watch the demo video](https://drive.google.com/file/d/1IVbxKADWkH2-_ChsPJCGBSfiHrMoR4rn/view?usp=sharing)
 
 ## 📱 Features
 
